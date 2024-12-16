@@ -16,7 +16,12 @@ def main():
 
      bmi = weight / squared_height
 
-     print(bmi)
+     #to improve the code use the round function to round the bmi value up or down depending on the first decimal number
+     # and make the code more user friendly
+
+     round_bmi = round(bmi)
+
+     print(round_bmi)
      
 
 if __name__=="__main__":
