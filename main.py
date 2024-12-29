@@ -7,9 +7,9 @@
 
 def main():
      
-     height = 1.65 
-     weight = 84
-     squared_height = height**2
+     height = float(input("Enter your height in meters: "))
+     weight = float(input("Enter your weight in kilograms: "))
+     squared_height = float(height**2)
 
      #print(square)
 
@@ -20,8 +20,19 @@ def main():
      # and make the code more user friendly
 
      round_bmi = round(bmi)
+     round_bmi_str = str(round_bmi)
 
-     print(round_bmi)
+     print(f"Your bmi is " + round_bmi_str)
+
+     if bmi < 18.5:
+          print("underweight")
+    
+     elif bmi >= 18.5 and bmi < 25:
+          print("normal weight")
+     else:
+          print("overweight")
+
+     
      
 
 if __name__=="__main__":
